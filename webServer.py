@@ -8,7 +8,8 @@ import sys
 def webServer(port=13331):
     serverSocket = socket(AF_INET, SOCK_STREAM)
     #Prepare a server socket
-    serverSocket.bind(("", port))
+    serverSocket.bind(("", 13331))
+    serverSocket.listen(1)
     #Fill in start
 
     #Fill in end
